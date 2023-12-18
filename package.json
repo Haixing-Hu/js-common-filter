@@ -43,6 +43,7 @@
   },
   "peerDependencies": {
     "@babel/runtime": "^7.23.2",
+    "dayjs": "^1.11.10",
     "@haixing_hu/clone": "^1.4.1",
     "@haixing_hu/common-util": "^4.2.2",
     "@haixing_hu/logging": "^1.2.1",

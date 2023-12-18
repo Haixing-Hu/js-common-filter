@@ -1508,6 +1508,7 @@ __metadata:
     check-es-version: "npm:^1.4.2"
     core-js: "npm:^3.33.0"
     cross-env: "npm:^7.0.3"
+    dayjs: "npm:^1.11.10"
     email-validator: "npm:^2.0.4"
     eslint: "npm:^8.49.0"
     eslint-plugin-import: "npm:^2.28.1"
@@ -3376,6 +3377,13 @@ __metadata:
     whatwg-mimetype: "npm:^3.0.0"
     whatwg-url: "npm:^11.0.0"
   checksum: 051c3aaaf3e961904f136aab095fcf6dff4db23a7fc759dd8ba7b3e6ba03fc07ef608086caad8ab910d864bd3b5e57d0d2f544725653d77c96a2c971567045f4
+  languageName: node
+  linkType: hard
+
+"dayjs@npm:^1.11.10":
+  version: 1.11.10
+  resolution: "dayjs@npm:1.11.10"
+  checksum: 4de9af50639d47df87f2e15fa36bb07e0f9ed1e9c52c6caa1482788ee9a384d668f1dbd00c54f82aaab163db07d61d2899384b8254da3a9184fc6deca080e2fe
   languageName: node
   linkType: hard
 
