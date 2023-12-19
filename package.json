@@ -1,6 +1,6 @@
 {
   "name": "@haixing_hu/common-filter",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A JavaScript ES7 library of common filters",
   "author": "Haixing Hu (starfish.hu@gmail.com)",
   "license": "Apache-2.0",
