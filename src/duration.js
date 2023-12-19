@@ -6,7 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import { round } from '@njzhyl/common-util';
+import { round } from '@haixing_hu/common-util';
 
 /**
  * 将一个数字转换为字符串，如果数字转换后的字符串不足2位，在前面补'0'。

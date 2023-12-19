@@ -61,7 +61,7 @@ describe('src/percent.js', () => {
     expect(percent(1.2315, 1)).toBe(`123.2${PERCENT_SYMBOL}`);
   });
   test('.315', () => {
-    expect(percent(.315)).toBe(`32${PERCENT_SYMBOL}`);
+    expect(percent(0.315)).toBe(`32${PERCENT_SYMBOL}`);
   });
   test('0', () => {
     expect(percent(0)).toBe(`0${PERCENT_SYMBOL}`);

@@ -20,5 +20,4 @@ function formatHasHasnt(value) {
   return (value ? '有' : '无');
 }
 
-
 export default formatHasHasnt;

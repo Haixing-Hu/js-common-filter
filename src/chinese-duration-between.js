@@ -35,7 +35,7 @@ function formatChineseDurationBetween(
     endTime,
     precision = 'second',
     preferNonZero = false,
-  ) {
+) {
   const start = dayjs(startTime);
   const end = dayjs(endTime);
   const diff = end.diff(start, 'second');

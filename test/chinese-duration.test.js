@@ -79,7 +79,7 @@ describe('src/chinese-duration.js，不指定precision', () => {
  *
  * @author 胡海星
  */
- describe('src/chinese-duration.js，指定precision为"second"', () => {
+describe('src/chinese-duration.js，指定precision为"second"', () => {
   test('undefined, precision = "second"', () => {
     expect(chineseDuration(undefined, 'second'))
       .toBe('无');
@@ -145,7 +145,7 @@ describe('src/chinese-duration.js，不指定precision', () => {
  *
  * @author 胡海星
  */
- describe('src/chinese-duration.js，指定precision为"minute"', () => {
+describe('src/chinese-duration.js，指定precision为"minute"', () => {
   test('undefined, precision = "minute"', () => {
     expect(chineseDuration(undefined, 'minute'))
       .toBe('无');
@@ -245,7 +245,7 @@ describe('src/chinese-duration.js，不指定precision', () => {
  *
  * @author 胡海星
  */
- describe('src/chinese-duration.js，指定precision为"hour"', () => {
+describe('src/chinese-duration.js，指定precision为"hour"', () => {
   test('undefined, precision = "hour"', () => {
     expect(chineseDuration(undefined, 'hour'))
       .toBe('无');
@@ -352,13 +352,12 @@ describe('src/chinese-duration.js，指定precision不合法', () => {
   });
 });
 
-
 /**
  * 单元测试 'src/chinese-duration.js'，指定precision为'minute', preferNonZero为true。
  *
  * @author 胡海星
  */
- describe('src/chinese-duration.js，指定precision为"minute", preferNonZero为true', () => {
+describe('src/chinese-duration.js，指定precision为"minute", preferNonZero为true', () => {
   test('undefined, precision = "minute", preferNonZero为true', () => {
     expect(chineseDuration(undefined, 'minute', true))
       .toBe('无');
@@ -458,7 +457,7 @@ describe('src/chinese-duration.js，指定precision不合法', () => {
  *
  * @author 胡海星
  */
- describe('src/chinese-duration.js，指定precision为"hour", preferNonZero为true', () => {
+describe('src/chinese-duration.js，指定precision为"hour", preferNonZero为true', () => {
   test('undefined, precision = "hour", preferNonZero为true', () => {
     expect(chineseDuration(undefined, 'hour', true))
       .toBe('无');

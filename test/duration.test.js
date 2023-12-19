@@ -63,7 +63,7 @@ describe('src/duration.js，不指定precision', () => {
  *
  * @author 胡海星
  */
- describe('src/duration.js，指定precision为"second"', () => {
+describe('src/duration.js，指定precision为"second"', () => {
   test('undefined，指定precision为"second"', () => {
     expect(duration(undefined, 'second'))
       .toBe('00:00');
@@ -113,7 +113,7 @@ describe('src/duration.js，不指定precision', () => {
  *
  * @author 胡海星
  */
- describe('src/duration.js，指定precision为"minute"', () => {
+describe('src/duration.js，指定precision为"minute"', () => {
   test('undefined，指定precision为"minute"', () => {
     expect(duration(undefined, 'minute'))
       .toBe('00:00');
@@ -195,7 +195,7 @@ describe('src/duration.js，不指定precision', () => {
  *
  * @author 胡海星
  */
- describe('src/duration.js，指定precision为"hour"', () => {
+describe('src/duration.js，指定precision为"hour"', () => {
   test('undefined，指定precision为"hour"', () => {
     expect(duration(undefined, 'hour'))
       .toBe('00');
