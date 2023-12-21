@@ -82,7 +82,6 @@ describe('src/chinese-datetime.js', () => {
     expect(chineseDatetime(str)).toBe(expected);
   });
 
-
   test('2020-10-28T12:32:11+08:00, Asia/Ust-Nera (UTC+10)', () => {
     const str = '2020-10-28T12:32:11+08:00';
     expect(chineseDatetime(str, 'Asia/Ust-Nera')).toBe('2020年10月28日14点32分11秒');
@@ -140,5 +139,4 @@ describe('src/chinese-datetime.js', () => {
     const expected = expectedChineseLocalDatetime(str);
     expect(chineseDatetime(str)).toBe(expected);
   });
-
 });
