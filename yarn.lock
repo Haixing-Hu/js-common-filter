@@ -1488,7 +1488,7 @@ __metadata:
     "@babel/preset-env": "npm:^7.23.2"
     "@babel/runtime": "npm:^7.23.2"
     "@haixing_hu/clone": "npm:^1.4.1"
-    "@haixing_hu/common-util": "npm:^4.3.0"
+    "@haixing_hu/common-util": "npm:^4.4.0"
     "@haixing_hu/common-validator": "npm:^3.0.0"
     "@haixing_hu/eslint-config": "npm:^1.3.1"
     "@haixing_hu/jsdoc-minami": "npm:^1.5.1"
@@ -1530,9 +1530,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@haixing_hu/common-util@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "@haixing_hu/common-util@npm:4.3.0"
+"@haixing_hu/common-util@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "@haixing_hu/common-util@npm:4.4.0"
   dependencies:
     deep-equal: "npm:^2.0.5"
     json-beautify: "npm:^1.1.1"
@@ -1542,7 +1542,7 @@ __metadata:
     "@haixing_hu/clone": ^1.4.1
     "@haixing_hu/logging": ^1.2.1
     "@haixing_hu/typeinfo": ^2.3.0
-  checksum: b01767993a40cae35d6e547ba8dac3425f29c5c2951148956b5438f415599a0f692c3eff310c4fdbfe07ed6414a2f1b862cfd05d49655e269b6f44d819deadd6
+  checksum: 1a645651113f6fa84bd480537a64f25d032a80b8db66a35f8c22b767d5836a094af4613d77d94fb67404c900bf5900ae47f1158f1d811e999ffbcfb976ef874f
   languageName: node
   linkType: hard
 

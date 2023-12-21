@@ -6,6 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
+import { formatLocalDatetime } from '@haixing_hu/common-util';
 import { datetime } from '../src';
 
 /**
@@ -34,17 +35,13 @@ describe('src/datetime.js', () => {
   test('"2020-10-28T12:31:11Z", local timezone', () => {
     const str = '2020-10-28T12:31:11Z';
     const actual = datetime(str);
-    const value = new Date(str);
-    const expected = `${value.getFullYear()}-${value.getMonth() + 1}-${value.getDate()} `
-        + `${value.getHours()}:${value.getMinutes()}:${value.getSeconds()}`;
+    const expected = formatLocalDatetime(new Date(str));
     expect(actual).toBe(expected);
   });
   test('"2020-10-28T12:03:00+08:00", local timezone', () => {
     const str = '2020-10-28T07:03:00+09:00';
     const actual = datetime(str);
-    const value = new Date(str);
-    const expected = `${value.getFullYear()}-${value.getMonth() + 1}-${value.getDate()} `
-      + `0${value.getHours()}:0${value.getMinutes()}:0${value.getSeconds()}`;
+    const expected = formatLocalDatetime(new Date(str));
     expect(actual).toBe(expected);
   });
   test('"2020-10-28T14:31:01Z", Asia/Ust-Nera (UTC+10)', () => {
