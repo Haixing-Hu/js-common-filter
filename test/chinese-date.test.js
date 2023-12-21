@@ -41,37 +41,33 @@ describe('src/chineseDate.js', () => {
     expect(chineseDate(str, 'utc')).toBe('2020年8月7日');
   });
 
-  test('"2020-10-28T12:31:01Z", local timezone', () => {
-    const str = '2020-10-28T12:31:01Z';
+  function expectedChineseLocalDate(str) {
     const date = new Date(str);
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
     const day = date.getDate();
-    expect(chineseDate(str)).toBe(`${year}年${month}月${day}日`);
+    return `${year}年${month}月${day}日`;
+  }
+
+  test('"2020-10-28T12:31:01Z", local timezone', () => {
+    const str = '2020-10-28T12:31:01Z';
+    const expected = expectedChineseLocalDate(str);
+    expect(chineseDate(str)).toBe(expected);
   });
   test('"2020-10-28T12:03:00+09:00", local timezone', () => {
     const str = '2020-10-28T12:03:00+09:00';
-    const date = new Date(str);
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-    expect(chineseDate(str)).toBe(`${year}年${month}月${day}日`);
+    const expected = expectedChineseLocalDate(str);
+    expect(chineseDate(str)).toBe(expected);
   });
   test('"2020-08-28T08:03:00+10:00", local timezone', () => {
     const str = '2020-08-28T08:03:00+10:00';
-    const date = new Date(str);
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-    expect(chineseDate(str)).toBe(`${year}年${month}月${day}日`);
+    const expected = expectedChineseLocalDate(str);
+    expect(chineseDate(str)).toBe(expected);
   });
   test('"2020-08-08T07:03:00+08:00", local timezone', () => {
     const str = '2020-08-08T07:03:00+08:00';
-    const date = new Date(str);
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-    expect(chineseDate(str)).toBe(`${year}年${month}月${day}日`);
+    const expected = expectedChineseLocalDate(str);
+    expect(chineseDate(str)).toBe(expected);
   });
 
   test('"2020-10-28T14:31:01Z", Asia/Ust-Nera (UTC+10)', () => {
