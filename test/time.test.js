@@ -6,6 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
+import { formatLocalTime } from '@haixing_hu/common-util';
 import { time } from '../src';
 
 /**
@@ -35,15 +36,13 @@ describe('src/time.js', () => {
   test('"2020-10-28T12:31:01Z", local timezone', () => {
     const str = '2020-10-28T12:31:11Z';
     const actual = time(str);
-    const value = new Date(str);
-    const expected = `${value.getHours()}:${value.getMinutes()}:${value.getSeconds()}`;
+    const expected = formatLocalTime(new Date(str));
     expect(actual).toBe(expected);
   });
   test('"2020-10-28T12:03:00+08:00", local timezone', () => {
     const str = '2020-10-28T07:03:00+09:00';
     const actual = time(str);
-    const value = new Date(str);
-    const expected = `0${value.getHours()}:0${value.getMinutes()}:0${value.getSeconds()}`;
+    const expected = formatLocalTime(new Date(str));
     expect(actual).toBe(expected);
   });
   test('"2020-10-28T12:31:01Z", Asia/Ust-Nera (UTC+10)', () => {

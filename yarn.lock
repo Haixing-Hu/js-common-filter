@@ -1488,7 +1488,7 @@ __metadata:
     "@babel/preset-env": "npm:^7.23.2"
     "@babel/runtime": "npm:^7.23.2"
     "@haixing_hu/clone": "npm:^1.4.1"
-    "@haixing_hu/common-util": "npm:^4.2.4"
+    "@haixing_hu/common-util": "npm:^4.3.0"
     "@haixing_hu/common-validator": "npm:^3.0.0"
     "@haixing_hu/eslint-config": "npm:^1.3.1"
     "@haixing_hu/jsdoc-minami": "npm:^1.5.1"
@@ -1524,15 +1524,15 @@ __metadata:
     vue: "npm:^3.3.7"
   peerDependencies:
     "@babel/runtime": ^7.23.2
-    "@haixing_hu/common-util": ^4.2.4
+    "@haixing_hu/common-util": ^4.3.0
     "@haixing_hu/common-validator": ^3.0.0
     dayjs: ^1.11.10
   languageName: unknown
   linkType: soft
 
-"@haixing_hu/common-util@npm:^4.2.4":
-  version: 4.2.4
-  resolution: "@haixing_hu/common-util@npm:4.2.4"
+"@haixing_hu/common-util@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@haixing_hu/common-util@npm:4.3.0"
   dependencies:
     deep-equal: "npm:^2.0.5"
     json-beautify: "npm:^1.1.1"
@@ -1542,7 +1542,7 @@ __metadata:
     "@haixing_hu/clone": ^1.4.1
     "@haixing_hu/logging": ^1.2.1
     "@haixing_hu/typeinfo": ^2.3.0
-  checksum: 26785e5f28409b6fdd46e43f8d251b9f105f62e3a1af7f32146ee28d54cd416ff280aca5aaaa47d0442797f1e9bceffd21ac3f743ae5702fac7e5fc4893dac29
+  checksum: b01767993a40cae35d6e547ba8dac3425f29c5c2951148956b5438f415599a0f692c3eff310c4fdbfe07ed6414a2f1b862cfd05d49655e269b6f44d819deadd6
   languageName: node
   linkType: hard
 
