@@ -6,7 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import dayjs from 'dayjs';
+import toDayjs from './impl/to-dayjs';
 
 /**
  * The format of local datetime, which the full precision to seconds.
@@ -24,28 +24,32 @@ const DATETIME_FORMAT_MINUTE = 'YYYY年M月D日H点m分';
 const DATETIME_FORMAT_HOUR = 'YYYY年M月D日H点';
 
 /**
- * Formats a datetime in the specified time zone and reserve only its date part.
+ * Formats a date time in the specified time zone and reserve its date time part,
+ * displaying in Chinese.
  *
  * @param {string|Date}dateTime
  *     a datetime value, either a string in the ISO-8601 format, or a {@link Date}
  *     object.
+ * @param {string|undefined} tz
+ *     the specified timezone. If it is `undefined`, or `null`, or empty strings,
+ *     the local timezone is used. Default value of this argument is `undefined`.
  * @returns {string}
  *     the formatted date time, in the local timezone, displayed in the Chinese
  *     form.
  * @author Haixing Hu
  */
-function formatDatetimeInChinese(dateTime) {
+function formatDatetimeInChinese(dateTime, tz = undefined) {
   if (!dateTime) {
     return '';
   }
-  const time = dayjs(dateTime);
-  let datetimeFormat = DATETIME_FORMAT_HOUR;
+  const time = toDayjs(dateTime, tz);
+  let format = DATETIME_FORMAT_HOUR;
   if (time.second() !== 0) {
-    datetimeFormat = DATETIME_FORMAT_SECOND;
+    format = DATETIME_FORMAT_SECOND;
   } else if (time.minute() !== 0) {
-    datetimeFormat = DATETIME_FORMAT_MINUTE;
+    format = DATETIME_FORMAT_MINUTE;
   }
-  return time.format(datetimeFormat);
+  return time.format(format);
 }
 
 export default formatDatetimeInChinese;

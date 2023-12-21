@@ -13,7 +13,7 @@ import { round } from '@haixing_hu/common-util';
  *
  * @param {number} seconds
  *     The seconds of the duration, which is in the range of [0, 60).
- * @param {number} precision
+ * @param {string} precision
  *     The highest precision of the formatted duration. Available values are
  *     `'hour'`, `'minute'` and `'second'`.
  * @param {boolean} preferNonZero
@@ -24,6 +24,8 @@ import { round } from '@haixing_hu/common-util';
  *     seconds` should be displayed.
  * @returns {string}
  *     The format string of the duration, in the form of `H hours m minutes s seconds`.
+ * @author Haixing Hu
+ * @private
  */
 function formatForSeconds(seconds, precision, preferNonZero) {
   if (preferNonZero) {
@@ -46,7 +48,7 @@ function formatForSeconds(seconds, precision, preferNonZero) {
  *
  * @param {number} minutes
  *     The minutes of the duration, which is in the range of [0, 60).
- * @param {number} precision
+ * @param {string} precision
  *     The highest precision of the formatted duration. Available values are
  *     `'hour'`, `'minute'` and `'second'`.
  * @param {boolean} preferNonZero
@@ -57,6 +59,8 @@ function formatForSeconds(seconds, precision, preferNonZero) {
  *     seconds` should be displayed.
  * @returns {string}
  *     The format string of the duration, in the form of `H hours m minutes s seconds`.
+ * @author Haixing Hu
+ * @private
  */
 function formatForMinutes(minutes, precision, preferNonZero) {
   if (preferNonZero) {
@@ -80,7 +84,7 @@ function formatForMinutes(minutes, precision, preferNonZero) {
  *     The minutes of the duration, which is in the range of [0, 60).
  * @param {number} seconds
  *     The seconds of the duration, which is in the range of [0, 60).
- * @param {number} precision
+ * @param {string} precision
  *     The highest precision of the formatted duration. Available values are
  *     `'hour'`, `'minute'` and `'second'`.
  * @param {boolean} preferNonZero
@@ -91,6 +95,8 @@ function formatForMinutes(minutes, precision, preferNonZero) {
  *     seconds` should be displayed.
  * @returns {string}
  *     The format string of the duration, in the form of `H hours m minutes s seconds`.
+ * @author Haixing Hu
+ * @private
  */
 function formatForMinutesSeconds(minutes, seconds, precision, preferNonZero) {
   if (preferNonZero) {
@@ -122,11 +128,13 @@ function formatForMinutesSeconds(minutes, seconds, precision, preferNonZero) {
  *     The hours of the duration, which is non-zero.
  * @param {number} minutes
  *     The minutes of the duration, which is in the range of [0, 60).
- * @param {number} precision
+ * @param {string} precision
  *     The highest precision of the formatted duration. Available values are
  *     `'hour'`, `'minute'` and `'second'`.
  * @returns {string}
  *     The format string of the duration, in the form of `H hours m minutes s seconds`.
+ * @author Haixing Hu
+ * @private
  */
 function formatForHoursMinutes(hours, minutes, precision) {
   switch (precision) {
@@ -146,11 +154,13 @@ function formatForHoursMinutes(hours, minutes, precision) {
  *     The hours of the duration, which is non-zero.
  * @param {number} seconds
  *     The seconds of the duration, which is in the range of [0, 60).
- * @param {number} precision
+ * @param {string} precision
  *     The highest precision of the formatted duration. Available values are
  *     `'hour'`, `'minute'` and `'second'`.
  * @returns {string}
  *     The format string of the duration, in the form of `H hours m minutes s seconds`.
+ * @author Haixing Hu
+ * @private
  */
 function formatForHoursSeconds(hours, seconds, precision) {
   switch (precision) {
@@ -173,11 +183,13 @@ function formatForHoursSeconds(hours, seconds, precision) {
  *     The minutes of the duration, which is in the range of [0, 60).
  * @param {number} seconds
  *     The seconds of the duration, which is in the range of [0, 60).
- * @param {number} precision
+ * @param {string} precision
  *     The highest precision of the formatted duration. Available values are
  *     `'hour'`, `'minute'` and `'second'`.
  * @returns {string}
  *     The format string of the duration, in the form of `H hours m minutes s seconds`.
+ * @author Haixing Hu
+ * @private
  */
 function formatForHoursMinutesSeconds(hours, minutes, seconds, precision) {
   switch (precision) {

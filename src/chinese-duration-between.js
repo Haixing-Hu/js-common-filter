@@ -10,7 +10,8 @@ import dayjs from 'dayjs';
 import formatChineseDuration from './chinese-duration';
 
 /**
- * 格式化两个时间点之间的时长，以中文形式显示，形式为"H小时m分s秒"。
+ * Format the duration between two time points and display it in Chinese, in the
+ * form of 'H小时m分s秒'.
  *
  * @param {string|Date} startTime
  *     The start time point.

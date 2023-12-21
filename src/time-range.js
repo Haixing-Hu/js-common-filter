@@ -6,22 +6,27 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import formatLocalTime from './time';
+import formatTime from './time';
 
 /**
- * 格式化一个时间区间。
+ * Formats a date time in the specified time zone and reserve only its time part.
  *
- * @param {String|Date} startTime
- *    开始时间，可以是 ISO-8601 格式的字符串表示形式，或者是一个 {@link Date} 对象。
- * @param {String|Date} endTime
- *    结束时间，可以是 ISO-8601 格式的字符串表示形式，或者是一个 {@link Date} 对象。
- * @return
- *    对该时间区间的格式化字符串，形式为"HH:mm:ss 至 HH:mm:ss"。
- * @author 胡海星
+ * @param {string|Date} startTime
+ *     the starting time, either a string in the ISO-8601 format, or a {@link Date}
+ *     object.
+ * @param {string|Date} endTime
+ *     the ending time, either a string in the ISO-8601 format, or a {@link Date}
+ *     object.
+ * @param {string|undefined} tz
+ *     the specified timezone. If it is `undefined`, or `null`, or empty strings,
+ *     the local timezone is used. Default value of this argument is `undefined`.
+ * @returns {string|null}
+ *     the formatted time range, in the predefined format.
+ * @author Haixing Hu
  */
-function formatTimeRange(startTime, endTime) {
-  const start = formatLocalTime(startTime) || '--';
-  const end = formatLocalTime(endTime) || '--';
+function formatTimeRange(startTime, endTime, tz = undefined) {
+  const start = formatTime(startTime, tz) || '--';
+  const end = formatTime(endTime, tz) || '--';
   return `${start} 至 ${end}`;
 }
 

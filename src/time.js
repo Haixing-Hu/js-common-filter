@@ -6,7 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import dayjs from 'dayjs';
+import toDayjs from './impl/to-dayjs';
 
 /**
  * Formats a date time in the specified time zone and reserve only its time part.
@@ -14,17 +14,20 @@ import dayjs from 'dayjs';
  * @param {string|Date} dateTime
  *     a datetime value, either a string in the ISO-8601 format, or a {@link Date}
  *     object.
- * @return {string|null}
- *     the time part of the formatted date time, in the local time zone, or
- *     `null` if the input is `null` or `undefined` or empty string.
+ * @param {string|undefined} tz
+ *     the specified timezone. If it is `undefined`, or `null`, or empty strings,
+ *     the local timezone is used. Default value of this argument is `undefined`.
+ * @returns {string|null}
+ *     the time part of the formatted date time, in the predefined format. If the
+ *     input is `null` or `undefined` or empty string, this function returns `null`.
  * @author Haixing Hu
  */
-function formatLocalTime(dateTime) {
+function formatTime(dateTime, tz = undefined) {
   if (dateTime) {
-    return dayjs(dateTime).format('HH:mm:ss');
+    return toDayjs(dateTime, tz).format('HH:mm:ss');
   } else {
     return null;
   }
 }
 
-export default formatLocalTime;
+export default formatTime;

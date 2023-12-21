@@ -9,9 +9,9 @@
 import { time } from '../src';
 
 /**
- * 单元测试 'src/time.js'
+ * Unit test of the 'src/time.js'
  *
- * @author 胡海星
+ * @author Haixing Hu
  */
 describe('src/time.js', () => {
   test('undefined', () => {
@@ -26,12 +26,30 @@ describe('src/time.js', () => {
     expect(time(''))
       .toBeNull();
   });
-  test('"2020-10-28T12:31:01"', () => {
-    expect(time('2020-10-28T12:31:01'))
-      .toBe('12:31:01');
+  test('"2020-10-28T12:31:01Z", utc', () => {
+    expect(time('2020-10-28T12:31:01Z', 'utc')).toBe('12:31:01');
   });
-  test('"2020-10-28T12:03:00+08:00"', () => {
-    expect(time('2020-10-28T12:03:00+08:00'))
-      .toBe('12:03:00');
+  test('"2020-10-28T12:03:00+08:00", utc', () => {
+    expect(time('2020-10-28T12:03:00+08:00', 'utc')).toBe('04:03:00');
+  });
+  test('"2020-10-28T12:31:01Z", local timezone', () => {
+    const str = '2020-10-28T12:31:11Z';
+    const actual = time(str);
+    const value = new Date(str);
+    const expected = `${value.getHours()}:${value.getMinutes()}:${value.getSeconds()}`;
+    expect(actual).toBe(expected);
+  });
+  test('"2020-10-28T12:03:00+08:00", local timezone', () => {
+    const str = '2020-10-28T07:03:00+09:00';
+    const actual = time(str);
+    const value = new Date(str);
+    const expected = `0${value.getHours()}:0${value.getMinutes()}:0${value.getSeconds()}`;
+    expect(actual).toBe(expected);
+  });
+  test('"2020-10-28T12:31:01Z", Asia/Ust-Nera (UTC+10)', () => {
+    expect(time('2020-10-28T12:31:01Z', 'Asia/Ust-Nera')).toBe('22:31:01');
+  });
+  test('"2020-10-28T12:03:00+08:00", utc+10', () => {
+    expect(time('2020-10-28T12:03:00+08:00', 'Asia/Ust-Nera')).toBe('14:03:00');
   });
 });
