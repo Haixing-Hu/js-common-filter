@@ -1524,7 +1524,7 @@ __metadata:
     vue: "npm:^3.3.7"
   peerDependencies:
     "@babel/runtime": ^7.23.2
-    "@haixing_hu/common-util": ^4.3.0
+    "@haixing_hu/common-util": ^4.5.0
     "@haixing_hu/common-validator": ^3.0.0
     dayjs: ^1.11.10
   languageName: unknown
