@@ -1489,7 +1489,7 @@ __metadata:
     "@babel/runtime": "npm:^7.23.2"
     "@haixing_hu/clone": "npm:^1.4.1"
     "@haixing_hu/common-util": "npm:^4.5.0"
-    "@haixing_hu/common-validator": "npm:^3.0.0"
+    "@haixing_hu/common-validator": "npm:^3.0.1"
     "@haixing_hu/eslint-config": "npm:^1.3.1"
     "@haixing_hu/jsdoc-minami": "npm:^1.5.1"
     "@haixing_hu/logging": "npm:^1.2.1"
@@ -1546,13 +1546,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@haixing_hu/common-validator@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@haixing_hu/common-validator@npm:3.0.0"
+"@haixing_hu/common-validator@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@haixing_hu/common-validator@npm:3.0.1"
   dependencies:
     email-validator: "npm:^2.0.4"
     node-uri: "npm:^1.1.2"
-  checksum: 52193902ed44fe4e42b2b21b0baf3c287ab2f5ccf5ef53a683895b301bbe270342dd6d29193b54eef285c82b8ed2849db64ce37f79312ada83e7c91669a6a0e7
+  checksum: 94ae107ef79c988e4e27d060ede38e49f3b7377b8d60e64cf1117119364077446c95aed21e32fbed1e5102d4796db0c209068eddf20368b2f06de69945d2dc0a
   languageName: node
   linkType: hard
 
