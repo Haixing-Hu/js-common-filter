@@ -346,18 +346,12 @@ describe('src/duration.js，覆盖源码的64，84，90行', () => {
   });
   // 测试90行
   test('测试90行', () => {
-    test('指定精度为"minute"，full为true', () => {
-      expect(duration(667, { precision: 'minute', full: true }))
-        .toBe('00:11:00');
-    });
-    test('指定精度为"minute"，full为true', () => {
-      expect(duration(3600, { precision: 'minute', full: true }))
-        .toBe('01:00:00');
-    });
-    test('指定精度为"minute"，full为true', () => {
-      expect(duration(3667, { precision: 'minute', full: true }))
-        .toBe('01:01:00');
-    });
+    expect(duration(667, { precision: 'minute', full: true }))
+      .toBe('00:11:00');
+    expect(duration(3600, { precision: 'minute', full: true }))
+      .toBe('01:00:00');
+    expect(duration(3667, { precision: 'minute', full: true }))
+      .toBe('01:01:00');
   });
 
   // // 测试64行，需要一个非整数的秒数
