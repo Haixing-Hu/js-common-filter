@@ -14,6 +14,8 @@ import chineseDurationBetween from './chinese-duration-between';
 import chineseLocalDatetime from './chinese-local-datetime';
 import date from './date';
 import datetime from './datetime';
+import yearMonth from './year-month';
+import datetimeWithPattern from './datetime-with-pattern';
 import privacyMask from './privacy-mask';
 import time from './time';
 import yesNo from './yes-no';
@@ -33,6 +35,8 @@ export {
   chineseLocalDatetime,
   date,
   datetime,
+  yearMonth,
+  datetimeWithPattern,
   privacyMask,
   time,
   timeRange,
