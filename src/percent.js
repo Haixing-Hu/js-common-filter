@@ -7,7 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 import { round, stringToFloat } from '@haixing_hu/common-util';
-import { Float } from '@haixing_hu/common-validator';
+import { NumberRule } from '@haixing_hu/common-validation-rule';
 
 const PERCENT_SYMBOL = ' %';
 
@@ -33,7 +33,7 @@ function formatPercent(value, digits = 0) {
     case 'number':
       return round(value * 100, digits).toFixed(digits) + PERCENT_SYMBOL;
     case 'string':
-      if (Float.isValid(value)) {
+      if (NumberRule.isValid(value)) {
         const v = stringToFloat(value);
         return round(v * 100, digits).toFixed(digits) + PERCENT_SYMBOL;
       } else {

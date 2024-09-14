@@ -7,7 +7,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 import { stringToFloat } from '@haixing_hu/common-util';
-import { Float } from '@haixing_hu/common-validator';
+import { NumberRule } from '@haixing_hu/common-validation-rule';
 
 const MONEY_PREFIX = '¥ ';
 
@@ -28,7 +28,7 @@ function formatMoney(value) {
     case 'number':
       return MONEY_PREFIX + (Math.round(value * 100) / 100).toFixed(2);
     case 'string':
-      if (Float.isValid(value)) {
+      if (NumberRule.isValid(value)) {
         return MONEY_PREFIX + (Math.round(stringToFloat(value) * 100) / 100).toFixed(2);
       } else {
         return '';
