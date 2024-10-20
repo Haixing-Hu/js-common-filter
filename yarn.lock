@@ -1490,8 +1490,8 @@ __metadata:
     "@babel/preset-env": "npm:^7.23.2"
     "@babel/runtime": "npm:^7.23.2"
     "@haixing_hu/clone": "npm:^1.7.1"
-    "@haixing_hu/common-util": "npm:^4.8.1"
-    "@haixing_hu/common-validation-rule": "npm:^1.1.0"
+    "@haixing_hu/common-util": "npm:^5.1.0"
+    "@haixing_hu/common-validation-rule": "npm:^1.2.1"
     "@haixing_hu/eslint-config": "npm:^1.3.3"
     "@haixing_hu/jsdoc-minami": "npm:^1.5.1"
     "@haixing_hu/logging": "npm:^1.3.3"
@@ -1530,39 +1530,35 @@ __metadata:
     vue: "npm:^3.3.7"
   peerDependencies:
     "@babel/runtime": ^7.23.2
-    "@haixing_hu/common-util": ^4.8.1
-    "@haixing_hu/common-validation-rule": ^1.1.0
+    "@haixing_hu/common-util": ^5.1.0
+    "@haixing_hu/common-validation-rule": ^1.2.1
     dayjs: ^1.11.10
   languageName: unknown
   linkType: soft
 
-"@haixing_hu/common-util@npm:^4.8.1":
-  version: 4.8.1
-  resolution: "@haixing_hu/common-util@npm:4.8.1"
+"@haixing_hu/common-util@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "@haixing_hu/common-util@npm:5.1.0"
   dependencies:
     deep-equal: "npm:^2.0.5"
     json-beautify: "npm:^1.1.1"
     query-string: "npm:^8.1.0"
   peerDependencies:
     "@babel/runtime": ^7.23.2
-    "@haixing_hu/clone": ^1.7.1
-    "@haixing_hu/logging": ^1.3.3
-    "@haixing_hu/naming-style": ^1.3.0
-    "@haixing_hu/type-detect": ^1.1.0
     "@haixing_hu/typeinfo": ^3.0.0
-  checksum: cf56ed1aed7a1264dffad4eaeae3948dcde753c105d4597b35a6f7fddafa62b730bd2820f3bb5578b9ec25e3d414a483f1137721a193b46cbdb2b7bbb0354a3b
+  checksum: 8e7da367ba2306413eb5d43c2896c462c6cb147b5594c5ccbfeac553ca25b723a3edb1b839d95ae64b60fb6c89cfe7433669c47a68b86f4d29d08b18c4aca64a
   languageName: node
   linkType: hard
 
-"@haixing_hu/common-validation-rule@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@haixing_hu/common-validation-rule@npm:1.1.0"
+"@haixing_hu/common-validation-rule@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@haixing_hu/common-validation-rule@npm:1.2.1"
   dependencies:
     email-validator: "npm:^2.0.4"
     node-uri: "npm:^1.1.2"
   peerDependencies:
     "@babel/runtime": ^7.23.0
-  checksum: c4ca92718c2a63212981b16bfe09646e0c19ff77fde97ea6921d84a86d64ba3535e64c4b4599b369f0ce14900ebbaef50183144c71bdb2e54fe97fd80416b9ba
+  checksum: c26237ecfccf367ea2d37a5de6b58685cdb1b24c29a3091fce47189cc88daefffcddd5a225290ef0635794ab80eccd2e082750cebf1536c63cb5092d36a44bd2
   languageName: node
   linkType: hard
 
