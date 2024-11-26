@@ -79,4 +79,20 @@ describe('src/percent.js', () => {
   test('-.319', () => {
     expect(percent(-0.319)).toBe(`-32${PERCENT_SYMBOL}`);
   });
+  test('null', () => {
+    expect(percent(null)).toBe('');
+  });
+  test('undefined', () => {
+    expect(percent(undefined)).toBe('');
+  });
+  test('empty string', () => {
+    expect(percent('')).toBe('');
+  });
+  test('non string, non number', () => {
+    expect(percent(true)).toBe('');
+  });
+
+  test('specified percent symbol', () => {
+    expect(percent(0.123, 0, ' ##')).toBe(`12 ##`);
+  });
 });

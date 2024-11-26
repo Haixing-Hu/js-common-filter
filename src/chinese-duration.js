@@ -225,10 +225,7 @@ function formatChineseDuration(seconds, precision = 'second', preferNonZero = fa
   if (!['hour', 'minute', 'second'].includes(precision)) {
     throw new Error('Unsupported precision: only "hour", "minute" and "second" is supported.');
   }
-  if ((seconds === undefined)
-      || (seconds === null)
-      || (typeof seconds !== 'number')
-      || (seconds < 0)) {
+  if (((typeof seconds !== 'number') && (typeof seconds !== 'bigint')) || (seconds < 0)) {
     return '无';
   }
   if (!Number.isInteger(seconds)) {

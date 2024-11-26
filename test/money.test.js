@@ -66,4 +66,25 @@ describe('src/money.js', () => {
   test('-.319', () => {
     expect(money(-0.319)).toBe(`${MONEY_PREFIX}-0.32`);
   });
+  test('specified digits', () => {
+    expect(money(123.319, 4)).toBe(`${MONEY_PREFIX}123.3190`);
+  });
+  test('specified digits and money prefix', () => {
+    expect(money(123.319, 4, '$')).toBe('$123.3190');
+  });
+  test('specified digits and money prefix and money suffix', () => {
+    expect(money(123.319, 4, '$', '#')).toBe('$123.3190#');
+  });
+  test('null', () => {
+    expect(money(null)).toBe('');
+  });
+  test('undefined', () => {
+    expect(money(undefined)).toBe('');
+  });
+  test('empty string', () => {
+    expect(money('')).toBe('');
+  });
+  test('non string non number', () => {
+    expect(money(true)).toBe('');
+  });
 });

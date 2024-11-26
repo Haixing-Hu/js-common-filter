@@ -42,6 +42,9 @@ describe('src/chinese-duration.js，不指定precision', () => {
     expect(chineseDuration(124))
       .toBe('2分4秒');
   });
+  test('正数，小于1小时', () => {
+    expect(chineseDuration(64, 'second', true)).toBe('1分4秒');
+  });
   test('正数，大于1小时', () => {
     expect(chineseDuration(40564))
       .toBe('11小时16分4秒');
