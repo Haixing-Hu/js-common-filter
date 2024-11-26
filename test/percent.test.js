@@ -93,6 +93,6 @@ describe('src/percent.js', () => {
   });
 
   test('specified percent symbol', () => {
-    expect(percent(0.123, 0, ' ##')).toBe(`12 ##`);
+    expect(percent(0.123, 0, ' ##')).toBe('12 ##');
   });
 });
