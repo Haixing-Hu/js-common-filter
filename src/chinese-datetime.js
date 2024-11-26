@@ -6,7 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import toDayjs from './impl/to-dayjs';
+import toTimezone from './to-timezone';
 
 /**
  * The format of local datetime, which the full precision to seconds.
@@ -42,14 +42,14 @@ function formatDatetimeInChinese(dateTime, tz = undefined) {
   if (!dateTime) {
     return '';
   }
-  const time = toDayjs(dateTime, tz);
+  const zonedDatetime = toTimezone(dateTime, tz);
   let format = DATETIME_FORMAT_HOUR;
-  if (time.second() !== 0) {
+  if (zonedDatetime.second() !== 0) {
     format = DATETIME_FORMAT_SECOND;
-  } else if (time.minute() !== 0) {
+  } else if (zonedDatetime.minute() !== 0) {
     format = DATETIME_FORMAT_MINUTE;
   }
-  return time.format(format);
+  return zonedDatetime.format(format);
 }
 
 export default formatDatetimeInChinese;

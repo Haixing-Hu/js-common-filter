@@ -6,7 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import toDayjs from './impl/to-dayjs';
+import toTimezone from './to-timezone';
 
 /**
  * Formats a date time in the specified time zone and reserve only its year-month part.
@@ -25,7 +25,7 @@ import toDayjs from './impl/to-dayjs';
  */
 function formatYearMonth(dateTime, tz = undefined) {
   if (dateTime) {
-    return toDayjs(dateTime, tz).format('YYYY-MM');
+    return toTimezone(dateTime, tz).format('YYYY-MM');
   } else {
     return null;
   }

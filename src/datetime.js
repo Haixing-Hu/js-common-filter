@@ -6,7 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import toDayjs from './impl/to-dayjs';
+import toTimezone from './to-timezone';
 
 /**
  * Formats a date time in the specified time zone and reserve only its date
@@ -26,7 +26,7 @@ import toDayjs from './impl/to-dayjs';
  */
 function formatDatetime(dateTime, tz = undefined) {
   if (dateTime) {
-    return toDayjs(dateTime, tz).format('YYYY-MM-DD HH:mm:ss');
+    return toTimezone(dateTime, tz).format('YYYY-MM-DD HH:mm:ss');
   } else {
     return null;
   }
