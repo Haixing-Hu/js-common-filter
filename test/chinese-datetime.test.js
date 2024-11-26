@@ -8,6 +8,20 @@
 ////////////////////////////////////////////////////////////////////////////////
 import { chineseDatetime } from '../src';
 
+function expectedChineseLocalDatetime(str) {
+  const date = new Date(str);
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+  const hour = date.getHours();
+  const minute = date.getMinutes();
+  const second = date.getSeconds();
+  const hourStr = `${hour}点`;
+  const minuteStr = ((minute > 0 || second > 0) ? `${minute}分` : '');
+  const secondStr = (second > 0 ? `${second}秒` : '');
+  return `${year}年${month}月${day}日${hourStr}${minuteStr}${secondStr}`;
+}
+
 /**
  * 单元测试 'src/chinese-datetime.js'
  *
@@ -41,20 +55,6 @@ describe('src/chinese-datetime.js', () => {
     const str = '2020-10-28T16:00:00Z';
     expect(chineseDatetime(str, 'utc')).toBe('2020年10月28日16点');
   });
-
-  function expectedChineseLocalDatetime(str) {
-    const date = new Date(str);
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-    const hour = date.getHours();
-    const minute = date.getMinutes();
-    const second = date.getSeconds();
-    const hourStr = `${hour}点`;
-    const minuteStr = ((minute > 0 || second > 0) ? `${minute}分` : '');
-    const secondStr = (second > 0 ? `${second}秒` : '');
-    return `${year}年${month}月${day}日${hourStr}${minuteStr}${secondStr}`;
-  }
 
   test('2020-10-28T12:32:11+08:00, local timezone', () => {
     const str = '2020-10-28T12:32:11+08:00';

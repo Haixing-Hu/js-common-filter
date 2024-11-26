@@ -53,4 +53,13 @@ describe('src/privacy-mask.js', () => {
   test('带空格的英文名字2', () => {
     expect(privacyMask('Bill Gates')).toBe('Bil*****es');
   });
+  test('null', () => {
+    expect(privacyMask(null)).toBe('');
+  });
+  test('undefined', () => {
+    expect(privacyMask(undefined)).toBe('');
+  });
+  test('empty string', () => {
+    expect(privacyMask('')).toBe('');
+  });
 });
