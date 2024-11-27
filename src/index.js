@@ -19,6 +19,7 @@ import datetimeWithPattern from './datetime-with-pattern';
 import privacyMask from './privacy-mask';
 import time from './time';
 import yesNo from './yes-no';
+import yesNoUnknown from './yes-no-unknown';
 import hasHasnot from './has-hasnot';
 import removeMidSpace from './remove-mid-space';
 import { money, MONEY_PREFIX } from './money';
@@ -45,6 +46,7 @@ export {
   time,
   timeRange,
   yesNo,
+  yesNoUnknown,
   hasHasnot,
   removeMidSpace,
   MONEY_PREFIX,
