@@ -6,8 +6,8 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import { round, stringToFloat } from '@haixing_hu/common-util';
-import { NumberRule } from '@haixing_hu/common-validation-rule';
+import { round, stringToFloat } from '@qubit-ltd/common-util';
+import { NumberRule } from '@qubit-ltd/common-validation-rule';
 
 const PERCENT_SYMBOL = ' %';
 

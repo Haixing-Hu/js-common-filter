@@ -6,7 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import { formatLocalTime } from '@haixing_hu/common-util';
+import { formatLocalTime } from '@qubit-ltd/common-util';
 import { time } from '../src';
 
 /**

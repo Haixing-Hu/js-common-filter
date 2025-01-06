@@ -6,7 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import { round } from '@haixing_hu/common-util';
+import { round } from '@qubit-ltd/common-util';
 
 /**
  * 默认的格式化选项。

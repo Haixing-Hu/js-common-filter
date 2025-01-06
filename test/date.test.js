@@ -6,7 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import { formatLocalDate } from '@haixing_hu/common-util';
+import { formatLocalDate } from '@qubit-ltd/common-util';
 import { date } from '../src';
 
 /**
