@@ -1834,7 +1834,7 @@ __metadata:
     "@rollup/plugin-babel": "npm:^6.0.4"
     "@rollup/plugin-commonjs": "npm:^25.0.8"
     "@rollup/plugin-json": "npm:^6.1.0"
-    "@rollup/plugin-node-resolve": "npm:^15.3.0"
+    "@rollup/plugin-node-resolve": "npm:^15.3.1"
     "@rollup/plugin-terser": "npm:^0.4.4"
     "@vue/compiler-dom": "npm:^3.5.13"
     "@vue/server-renderer": "npm:^3.5.13"
@@ -1854,9 +1854,9 @@ __metadata:
     jest-environment-jsdom-global: "npm:^4.0.0"
     jest-extended: "npm:^4.0.2"
     jsdoc: "npm:^4.0.4"
-    rollup: "npm:^4.28.1"
+    rollup: "npm:^4.29.2"
     rollup-plugin-analyzer: "npm:^4.0.0"
-    rollup-plugin-visualizer: "npm:^5.12.0"
+    rollup-plugin-visualizer: "npm:^5.13.1"
     vue: "npm:^3.5.13"
   peerDependencies:
     "@babel/runtime": ^7.26.0
@@ -2026,7 +2026,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-node-resolve@npm:^15.3.0":
+"@rollup/plugin-node-resolve@npm:^15.3.1":
   version: 15.3.1
   resolution: "@rollup/plugin-node-resolve@npm:15.3.1"
   dependencies:
@@ -6944,7 +6944,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-visualizer@npm:^5.12.0":
+"rollup-plugin-visualizer@npm:^5.13.1":
   version: 5.13.1
   resolution: "rollup-plugin-visualizer@npm:5.13.1"
   dependencies:
@@ -6966,7 +6966,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^4.28.1":
+"rollup@npm:^4.29.2":
   version: 4.29.2
   resolution: "rollup@npm:4.29.2"
   dependencies:
