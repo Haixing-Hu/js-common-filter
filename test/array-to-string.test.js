@@ -42,4 +42,16 @@ describe('src/array-to-string.js', () => {
     expect(arrayToString(['a', null, 'c']))
       .toBe('a null c');
   });
+  test('使用自定义分隔符', () => {
+    expect(arrayToString(['a', 'b', 'c'], ','))
+      .toBe('a,b,c');
+  });
+  test('使用空的分隔符', () => {
+    expect(arrayToString(['a', 'b', 'c'], ''))
+      .toBe('a b c');
+  });
+  test('使用null分隔符', () => {
+    expect(arrayToString(['a', 'b', 'c'], null))
+      .toBe('a b c');
+  });
 });
