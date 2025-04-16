@@ -38,4 +38,4 @@ describe('src/datetime-with-pattern.js', () => {
     const result = formatDatetimeWithPattern(date, 'YYYY-MM-DD HH:mm:ss', 'UTC');
     expect(result).toBe('2023-01-15 10:30:45');
   });
-}); 
+});

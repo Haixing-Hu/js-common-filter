@@ -72,4 +72,4 @@ describe('src/chinese-duration-between.js', () => {
   test('使用字符串格式的时间', () => {
     expect(formatChineseDurationBetween('2023-01-15T10:00:00', '2023-01-15T11:30:45')).toBe('1小时30分45秒');
   });
-}); 
+});

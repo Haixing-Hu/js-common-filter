@@ -54,4 +54,4 @@ describe('src/duration-between.js', () => {
   test('使用字符串格式的时间', () => {
     expect(formatDurationBetween('2023-01-15T10:00:00', '2023-01-15T11:30:45')).toBe('01:30:45');
   });
-}); 
+});

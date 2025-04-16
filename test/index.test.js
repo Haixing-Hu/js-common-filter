@@ -47,4 +47,4 @@ describe('src/index.js', () => {
     expect(filters.money(123.45)).toBe('¥ 123.45');
     expect(filters.percent(0.1234)).toBe('12 %');
   });
-}); 
+});
