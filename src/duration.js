@@ -6,7 +6,6 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import { round } from '@qubit-ltd/common-util';
 
 /**
  * 默认的格式化选项。
@@ -71,7 +70,7 @@ function formatDuration(seconds, options = DEFAULT_OPTIONS) {
     }
   }
   if (!Number.isInteger(seconds)) {
-    seconds = round(seconds);
+    seconds = Math.round(seconds);
   }
   let hours = Math.floor(seconds / 3600);
   seconds %= 3600;

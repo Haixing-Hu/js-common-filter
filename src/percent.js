@@ -6,8 +6,8 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import { round, stringToFloat } from '@qubit-ltd/common-util';
 import { NumberRule } from '@qubit-ltd/common-validation-rule';
+import round from './impl/round';
 
 const PERCENT_SYMBOL = ' %';
 
@@ -35,7 +35,7 @@ function formatPercent(value, digits = 0, percentSymbol = PERCENT_SYMBOL) {
     return round(value * 100, digits).toFixed(digits) + percentSymbol;
   } else if ((typeof value === 'string') || (value instanceof String)) {
     if (NumberRule.isValid(value)) {
-      const v = stringToFloat(value);
+      const v = parseFloat(value);
       return round(v * 100, digits).toFixed(digits) + percentSymbol;
     } else {
       return '';

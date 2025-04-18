@@ -6,8 +6,8 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import { round, stringToFloat } from '@qubit-ltd/common-util';
 import { NumberRule } from '@qubit-ltd/common-validation-rule';
+import round from './impl/round';
 
 const MONEY_PREFIX = '¥ ';
 
@@ -35,7 +35,7 @@ function formatMoney(value, digits = 2, moneyPrefix = MONEY_PREFIX, moneySuffix 
     return moneyPrefix + round(value, digits).toFixed(digits) + moneySuffix;
   } else if ((typeof value === 'string') || (value instanceof String)) {
     if (NumberRule.isValid(value)) {
-      return moneyPrefix + round(stringToFloat(value), digits).toFixed(digits) + moneySuffix;
+      return moneyPrefix + round(parseFloat(value), digits).toFixed(digits) + moneySuffix;
     } else {
       return '';
     }

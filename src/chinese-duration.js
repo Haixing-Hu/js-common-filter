@@ -6,7 +6,6 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import { round } from '@qubit-ltd/common-util';
 
 /**
  * Formats a duration and display it in Chinese.
@@ -229,7 +228,7 @@ function formatChineseDuration(seconds, precision = 'second', preferNonZero = fa
     return '无';
   }
   if (!Number.isInteger(seconds)) {
-    seconds = round(seconds);
+    seconds = Math.round(seconds);
   }
   const hours = Math.floor(seconds / 3600);
   seconds %= 3600;

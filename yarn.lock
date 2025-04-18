@@ -1952,7 +1952,7 @@ __metadata:
     "@babel/runtime": "npm:^7.27.0"
     "@jest/core": "npm:^29.7.0"
     "@qubit-ltd/common-util": "npm:^5.4.0"
-    "@qubit-ltd/common-validation-rule": "npm:^1.4.5"
+    "@qubit-ltd/common-validation-rule": "npm:^1.4.6"
     "@qubit-ltd/eslint-config": "npm:^1.3.4"
     "@qubit-ltd/jsdoc-minami": "npm:^1.5.2"
     "@qubit-ltd/json": "npm:^1.2.0"
@@ -1990,7 +1990,6 @@ __metadata:
     vue: "npm:^3.5.13"
   peerDependencies:
     "@babel/runtime": ^7.26.0
-    "@qubit-ltd/common-util": ^5.3.4
     "@qubit-ltd/common-validation-rule": ^1.4.6
     dayjs: ^1.11.13
   languageName: unknown
@@ -2008,15 +2007,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qubit-ltd/common-validation-rule@npm:^1.4.5":
-  version: 1.4.5
-  resolution: "@qubit-ltd/common-validation-rule@npm:1.4.5"
+"@qubit-ltd/common-validation-rule@npm:^1.4.6":
+  version: 1.4.6
+  resolution: "@qubit-ltd/common-validation-rule@npm:1.4.6"
   dependencies:
     email-validator: "npm:^2.0.4"
     node-uri: "npm:^1.1.2"
   peerDependencies:
     "@babel/runtime": ^7.26.0
-  checksum: 10c0/06bdd1ffce696e74a66e5279acc033cf6f54f0ae9312766ea64c73f0f7761470bfe3a26b70f48be665a93f2a1224c6d1453b985cc918463d04e08026704cc18a
+  checksum: 10c0/2307de74458e5b0bfbbc9a97defbcec81e7f2996b5889aab9423a890485a97936ad51f23b03041edc4099badab9199f355faeacf8b4ec05b9abda286b8d3e330
   languageName: node
   linkType: hard
 
