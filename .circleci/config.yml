@@ -11,15 +11,21 @@ jobs:
       resource_class: medium
     steps:
       - checkout
+      - run:
+          name: Install Yarn 4.0.0 using Corepack
+          command: |
+            sudo corepack enable
+            sudo corepack prepare yarn@4.0.0 --activate
       - node/install-packages:
           pkg-manager: yarn
           with-cache: true
+          override-ci-command: yarn install --immutable
       - run:
           name: Lint the Source Code
           command: yarn lint
       - run:
           name: Test the Library
-          command: yarn test --runInBand
+          command: yarn test
       - run:
           name: Generate the API Documents
           command: yarn doc
