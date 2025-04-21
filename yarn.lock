@@ -431,19 +431,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-decorators@npm:^7.25.9":
-  version: 7.25.9
-  resolution: "@babel/plugin-proposal-decorators@npm:7.25.9"
-  dependencies:
-    "@babel/helper-create-class-features-plugin": "npm:^7.25.9"
-    "@babel/helper-plugin-utils": "npm:^7.25.9"
-    "@babel/plugin-syntax-decorators": "npm:^7.25.9"
-  peerDependencies:
-    "@babel/core": ^7.0.0-0
-  checksum: 10c0/d7d54644f50a60c47090d70121905ca76534bd7a837c03d25e163ca6ae384b48ef6dcfb125a99f12b3ce7e78e074a33f6fa8c4531c1a46aa31274153f587b05e
-  languageName: node
-  linkType: hard
-
 "@babel/plugin-proposal-private-property-in-object@npm:7.21.0-placeholder-for-preset-env.2":
   version: 7.21.0-placeholder-for-preset-env.2
   resolution: "@babel/plugin-proposal-private-property-in-object@npm:7.21.0-placeholder-for-preset-env.2"
@@ -494,17 +481,6 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 10c0/4464bf9115f4a2d02ce1454411baf9cfb665af1da53709c5c56953e5e2913745b0fcce82982a00463d6facbdd93445c691024e310b91431a1e2f024b158f6371
-  languageName: node
-  linkType: hard
-
-"@babel/plugin-syntax-decorators@npm:^7.25.9":
-  version: 7.25.9
-  resolution: "@babel/plugin-syntax-decorators@npm:7.25.9"
-  dependencies:
-    "@babel/helper-plugin-utils": "npm:^7.25.9"
-  peerDependencies:
-    "@babel/core": ^7.0.0-0
-  checksum: 10c0/47e44a7d61b76dac4f18fd61edc186012e084eb8f1fe253c483b0fe90b73366b4ebd2b0b03728e000fd1fdedc8af3aa6e93246caf97183a8d9d42a0eb57ecfcc
   languageName: node
   linkType: hard
 
@@ -1945,14 +1921,12 @@ __metadata:
   dependencies:
     "@babel/core": "npm:^7.26.10"
     "@babel/eslint-parser": "npm:^7.27.0"
-    "@babel/plugin-proposal-decorators": "npm:^7.25.9"
-    "@babel/plugin-transform-class-properties": "npm:^7.25.9"
     "@babel/plugin-transform-runtime": "npm:^7.26.10"
     "@babel/preset-env": "npm:^7.26.9"
     "@babel/runtime": "npm:^7.27.0"
     "@jest/core": "npm:^29.7.0"
     "@qubit-ltd/common-util": "npm:^5.4.0"
-    "@qubit-ltd/common-validation-rule": "npm:^1.4.6"
+    "@qubit-ltd/common-validation-rule": "npm:^1.5.0"
     "@qubit-ltd/eslint-config": "npm:^1.3.4"
     "@qubit-ltd/jsdoc-minami": "npm:^1.5.2"
     "@qubit-ltd/json": "npm:^1.2.0"
@@ -1970,7 +1944,6 @@ __metadata:
     "@vue/server-renderer": "npm:^3.5.13"
     "@vue/test-utils": "npm:^2.4.6"
     babel-jest: "npm:^29.7.0"
-    babel-plugin-transform-object-hasown: "npm:^1.1.0"
     check-es-version: "npm:^1.5.1"
     core-js: "npm:^3.41.0"
     cross-env: "npm:^7.0.3"
@@ -1990,7 +1963,7 @@ __metadata:
     vue: "npm:^3.5.13"
   peerDependencies:
     "@babel/runtime": ^7.26.0
-    "@qubit-ltd/common-validation-rule": ^1.4.6
+    "@qubit-ltd/common-validation-rule": ^1.5.0
     dayjs: ^1.11.13
   languageName: unknown
   linkType: soft
@@ -2007,15 +1980,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@qubit-ltd/common-validation-rule@npm:^1.4.6":
-  version: 1.4.6
-  resolution: "@qubit-ltd/common-validation-rule@npm:1.4.6"
+"@qubit-ltd/common-validation-rule@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@qubit-ltd/common-validation-rule@npm:1.5.0"
   dependencies:
     email-validator: "npm:^2.0.4"
     node-uri: "npm:^1.1.2"
   peerDependencies:
     "@babel/runtime": ^7.26.0
-  checksum: 10c0/2307de74458e5b0bfbbc9a97defbcec81e7f2996b5889aab9423a890485a97936ad51f23b03041edc4099badab9199f355faeacf8b4ec05b9abda286b8d3e330
+    "@qubit-ltd/type-detect": ^2.2.0
+  checksum: 10c0/ea5010fd2aea7cdca695ac5fb14d2cb9115f3fd6fddec8be2a555ee50fd487617d5760a8443b3c5d8a94fe617d8f9e5a11ebbd07d3dd646bd3fd4d1b91f5cdb7
   languageName: node
   linkType: hard
 
@@ -3007,13 +2981,6 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.4.0 || ^8.0.0-0 <8.0.0
   checksum: 10c0/40164432e058e4b5c6d56feecacdad22692ae0534bd80c92d5399ed9e1a6a2b6797c8fda837995daddd4ca391f9aa2d58c74ad465164922e0f73631eaf9c4f76
-  languageName: node
-  linkType: hard
-
-"babel-plugin-transform-object-hasown@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "babel-plugin-transform-object-hasown@npm:1.1.0"
-  checksum: 10c0/85e9532c9ee6b29443229ec141e012186e9a3686b448d47f115aef8731bf66b5d49ba69d39b253b81c7dfe305f61c947acf284f72317f05400ae25637e15c62e
   languageName: node
   linkType: hard
 
