@@ -23,12 +23,11 @@ import toTimezone from './to-timezone';
  *     in the Chinese form.
  * @author Haixing Hu
  */
-function formatDateInChinese(dateTime, tz = undefined) {
-  if (dateTime) {
-    return toTimezone(dateTime, tz).format('YYYY年M月D日');
-  } else {
+function formatDateInChinese(dateTime, tz) {
+  if (!dateTime) {
     return null;
   }
+  return toTimezone(dateTime, tz).format('YYYY年M月D日');
 }
 
 export default formatDateInChinese;
