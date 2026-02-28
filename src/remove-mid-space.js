@@ -24,7 +24,10 @@ const SPACE_REGEXP = /[ 　]/g;
  * @author 胡海星
  */
 function removeMidSpace(str) {
-  return str ? str.replace(SPACE_REGEXP, '') : '';
+  if (typeof str === 'string' || str instanceof String) {
+    return str.replace(SPACE_REGEXP, '');
+  }
+  return '';
 }
 
 export default removeMidSpace;
