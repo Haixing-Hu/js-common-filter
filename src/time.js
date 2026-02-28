@@ -22,12 +22,11 @@ import toTimezone from './to-timezone';
  *     input is `null` or `undefined` or empty string, this function returns `null`.
  * @author Haixing Hu
  */
-function formatTime(dateTime, tz = undefined) {
-  if (dateTime) {
-    return toTimezone(dateTime, tz).format('HH:mm:ss');
-  } else {
+function formatTime(dateTime, tz) {
+  if (!dateTime) {
     return null;
   }
+  return toTimezone(dateTime, tz).format('HH:mm:ss');
 }
 
 export default formatTime;
