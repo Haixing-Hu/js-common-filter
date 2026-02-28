@@ -26,12 +26,11 @@ import toTimezone from './to-timezone';
  *     returns `null`.
  * @author Haixing Hu
  */
-function formatDatetimeWithPattern(dateTime, pattern = 'YYYY-MM-DD HH:mm:ss', tz = undefined) {
-  if (dateTime) {
-    return toTimezone(dateTime, tz).format(pattern);
-  } else {
+function formatDatetimeWithPattern(dateTime, pattern = 'YYYY-MM-DD HH:mm:ss', tz) {
+  if (!dateTime) {
     return null;
   }
+  return toTimezone(dateTime, tz).format(pattern);
 }
 
 export default formatDatetimeWithPattern;
