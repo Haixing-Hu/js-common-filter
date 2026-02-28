@@ -11,10 +11,12 @@ import { hasHasnot } from '../src';
 describe('formathasHasnot', () => {
   it('returns "有" for true value', () => {
     expect(hasHasnot(true)).toBe('有');
+    expect(hasHasnot(new Boolean(true))).toBe('有');
   });
 
   it('returns "无" for false value', () => {
     expect(hasHasnot(false)).toBe('无');
+    expect(hasHasnot(new Boolean(false))).toBe('无');
   });
 
   it('returns "无" for null value', () => {

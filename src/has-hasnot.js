@@ -20,7 +20,7 @@
  */
 function formatHasHasnot(value) {
   if (typeof value === 'boolean' || (value instanceof Boolean)) {
-    return (value ? '有' : '无');
+    return (value.valueOf() ? '有' : '无');
   } else {
     return '无';
   }
