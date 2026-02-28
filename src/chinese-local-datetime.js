@@ -28,6 +28,9 @@ function formatDatetimeInChinese(dateTime) {
     return '';
   }
   const result = DATETIME_REGEXP.exec(dateTime);
+  if (!result) {
+    return String(dateTime);
+  }
   const year = Number.parseInt(result.groups.year, 10);
   const month = Number.parseInt(result.groups.month, 10);
   const day = Number.parseInt(result.groups.day, 10);

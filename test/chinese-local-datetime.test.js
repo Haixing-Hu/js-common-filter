@@ -22,6 +22,9 @@ describe('src/chinese-datetime.js', () => {
     expect(chineseLocalDatetime(null))
       .toBe('');
   });
+  test('invalid format', () => {
+    expect(chineseLocalDatetime('invalid date')).toBe('invalid date');
+  });
   test('2020-10-28 12:32:11', () => {
     expect(chineseLocalDatetime('2020-10-28 12:32:11'))
       .toBe('2020年10月28日12点32分11秒');
