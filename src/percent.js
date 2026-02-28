@@ -28,11 +28,11 @@ const PERCENT_SYMBOL = ' %';
  * @author 胡海星
  */
 function formatPercent(value, digits = 0, percentSymbol = PERCENT_SYMBOL) {
-  if (value === undefined || value === null) {
+  if (value == null) {
     return '';
   }
   if ((typeof value === 'number') || (value instanceof Number)) {
-    return round(value * 100, digits).toFixed(digits) + percentSymbol;
+    return round(value.valueOf() * 100, digits).toFixed(digits) + percentSymbol;
   } else if ((typeof value === 'string') || (value instanceof String)) {
     if (NumberRule.isValid(value)) {
       const v = parseFloat(value);
