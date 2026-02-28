@@ -31,7 +31,6 @@ describe('atTimezone', () => {
     const result = atTimezone('2024-12-31 00:00:00');
     expect(result.isValid()).toBe(true);
     expect(result.format()).toBe(dayjs('2024-12-31').format());
-    console.log(result.toISOString());
   });
 
   it('returns Day.js object for valid date string in UTC timezone', () => {

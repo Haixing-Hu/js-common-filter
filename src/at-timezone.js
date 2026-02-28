@@ -28,8 +28,8 @@ dayjs.extend(timezone);
  *     `null`.
  * @author Haixing Hu
  */
-function atTimezone(value, tz = undefined) {
-  if (value === null || value === undefined || value === '') {
+function atTimezone(value, tz) {
+  if (value == null || value === '') {
     return null;
   }
   let result;
