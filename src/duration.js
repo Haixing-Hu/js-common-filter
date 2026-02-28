@@ -51,12 +51,9 @@ function formatDuration(seconds, options = DEFAULT_OPTIONS) {
   const precision = options?.precision ?? DEFAULT_OPTIONS.precision;
   const full = options?.full ?? DEFAULT_OPTIONS.full;
   if (!['hour', 'minute', 'second'].includes(precision)) {
-    throw new Error('Unsupported precision: only "hour", "minute" and "second" is supported.');
+    throw new Error('Unsupported precision: only "hour", "minute" and "second" are supported.');
   }
-  if ((seconds === undefined)
-      || (seconds === null)
-      || (typeof seconds !== 'number')
-      || (seconds < 0)) {
+  if (seconds == null || typeof seconds !== 'number' || seconds < 0) {
     if (full) {
       return '00:00:00';
     }

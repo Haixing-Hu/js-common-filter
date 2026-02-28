@@ -279,12 +279,11 @@ describe('src/duration.js，指定precision为"hour"', () => {
  */
 describe('src/duration.js，指定precision不合法', () => {
   test('invalid precision', () => {
-    expect(() => duration(29.499, { precision: 'xxx' }))
-      .toThrow('Unsupported precision: only "hour", "minute" and "second" is supported.');
+    expect(() => duration(10, { precision: 'xxx' })).toThrow('Unsupported precision: only "hour", "minute" and "second" are supported.');
   });
   test('unsupported precision', () => {
     expect(() => duration(100, { precision: 'millisecond' }))
-      .toThrow('Unsupported precision: only "hour", "minute" and "second" is supported.');
+      .toThrow('Unsupported precision: only "hour", "minute" and "second" are supported.');
   });
 });
 
