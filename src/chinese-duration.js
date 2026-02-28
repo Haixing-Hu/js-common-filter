@@ -222,7 +222,7 @@ function formatForHoursMinutesSeconds(hours, minutes, seconds, precision) {
  */
 function formatChineseDuration(seconds, precision = 'second', preferNonZero = false) {
   if (!['hour', 'minute', 'second'].includes(precision)) {
-    throw new Error('Unsupported precision: only "hour", "minute" and "second" is supported.');
+    throw new Error('Unsupported precision: only "hour", "minute" and "second" are supported.');
   }
   if (((typeof seconds !== 'number') && (typeof seconds !== 'bigint')) || (seconds < 0)) {
     return '无';
