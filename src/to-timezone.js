@@ -30,8 +30,8 @@ dayjs.extend(timezone);
  *     but convert its internal timezone to the specified timezone. If
  * @author Haixing Hu
  */
-function toTimezone(datetime, tz = undefined) {
-  if (datetime === null || datetime === undefined || datetime === '') {
+function toTimezone(datetime, tz) {
+  if (datetime == null || datetime === '') {
     return null;
   }
   if (typeof datetime === 'string' || (datetime instanceof String)) {
