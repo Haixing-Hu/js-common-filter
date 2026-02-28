@@ -11,10 +11,12 @@ import { yesNoUnknown } from '../src';
 describe('formatYesNo', () => {
   it('returns "是" for true value', () => {
     expect(yesNoUnknown(true)).toBe('是');
+    expect(yesNoUnknown(new Boolean(true))).toBe('是');
   });
 
   it('returns "否" for false value', () => {
     expect(yesNoUnknown(false)).toBe('否');
+    expect(yesNoUnknown(new Boolean(false))).toBe('否');
   });
 
   it('returns "未知" for null value', () => {
