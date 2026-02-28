@@ -28,11 +28,11 @@ const MONEY_PREFIX = '¥ ';
  * @author 胡海星
  */
 function formatMoney(value, digits = 2, moneyPrefix = MONEY_PREFIX, moneySuffix = '') {
-  if (value === undefined || value === null) {
+  if (value == null) {
     return '';
   }
   if ((typeof value === 'number') || (value instanceof Number)) {
-    return moneyPrefix + round(value, digits).toFixed(digits) + moneySuffix;
+    return moneyPrefix + round(value.valueOf(), digits).toFixed(digits) + moneySuffix;
   } else if ((typeof value === 'string') || (value instanceof String)) {
     if (NumberRule.isValid(value)) {
       return moneyPrefix + round(parseFloat(value), digits).toFixed(digits) + moneySuffix;
