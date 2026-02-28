@@ -37,12 +37,7 @@ function privacyMask(str) {
     }
     const m = Math.trunc(n / 2);
     const k = Math.trunc((n - m + 1) / 2);
-    let result = str.substring(0, k);
-    for (let i = 0; i < m; ++i) {
-      result += MASK_CHAR;
-    }
-    result += str.substring(k + m, n);
-    return result;
+    return str.substring(0, k) + MASK_CHAR.repeat(m) + str.substring(k + m, n);
   }
   return '';
 }
