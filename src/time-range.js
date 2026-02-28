@@ -24,7 +24,7 @@ import formatTime from './time';
  *     the formatted time range, in the predefined format.
  * @author Haixing Hu
  */
-function formatTimeRange(startTime, endTime, tz = undefined) {
+function formatTimeRange(startTime, endTime, tz) {
   const start = formatTime(startTime, tz) || '--';
   const end = formatTime(endTime, tz) || '--';
   return `${start} 至 ${end}`;
