@@ -26,8 +26,8 @@ import { DATE_REGEXP } from './impl/regexp';
  *     local timezone; or an empty string if the input is `null` or `undefined` or
  *     empty string.
  */
-function dateToStartTimestamp(date, tz = undefined) {
-  if (date === null || date === undefined || date === '') {
+function dateToStartTimestamp(date, tz) {
+  if (date == null || date === '') {
     return '';
   }
   if (!DATE_REGEXP.test(date)) {
