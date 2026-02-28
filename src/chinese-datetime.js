@@ -38,7 +38,7 @@ const DATETIME_FORMAT_HOUR = 'YYYY年M月D日H点';
  *     form.
  * @author Haixing Hu
  */
-function formatDatetimeInChinese(dateTime, tz = undefined) {
+function formatDatetimeInChinese(dateTime, tz) {
   if (!dateTime) {
     return '';
   }
