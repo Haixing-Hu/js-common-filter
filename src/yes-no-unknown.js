@@ -21,7 +21,7 @@
  */
 function formatYesNoUnknown(value) {
   if (typeof value === 'boolean' || (value instanceof Boolean)) {
-    return (value ? '是' : '否');
+    return (value.valueOf() ? '是' : '否');
   } else {
     return '未知';
   }
