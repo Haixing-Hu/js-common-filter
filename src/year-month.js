@@ -23,12 +23,11 @@ import toTimezone from './to-timezone';
  *     returns `null`.
  * @author Haixing Hu
  */
-function formatYearMonth(dateTime, tz = undefined) {
-  if (dateTime) {
-    return toTimezone(dateTime, tz).format('YYYY-MM');
-  } else {
+function formatYearMonth(dateTime, tz) {
+  if (!dateTime) {
     return null;
   }
+  return toTimezone(dateTime, tz).format('YYYY-MM');
 }
 
 export default formatYearMonth;
