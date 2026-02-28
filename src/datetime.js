@@ -24,12 +24,11 @@ import toTimezone from './to-timezone';
  *     returns `null`.
  * @author Haixing Hu
  */
-function formatDatetime(dateTime, tz = undefined) {
-  if (dateTime) {
-    return toTimezone(dateTime, tz).format('YYYY-MM-DD HH:mm:ss');
-  } else {
+function formatDatetime(dateTime, tz) {
+  if (!dateTime) {
     return null;
   }
+  return toTimezone(dateTime, tz).format('YYYY-MM-DD HH:mm:ss');
 }
 
 export default formatDatetime;
