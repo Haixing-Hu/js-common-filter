@@ -29,13 +29,13 @@ describe('src/datetime-with-pattern.js', () => {
 
   test('valid date with custom pattern', () => {
     const date = new Date('2023-01-15T10:30:45');
-    const result = formatDatetimeWithPattern(date, 'DD/MM/YYYY HH:mm');
+    const result = formatDatetimeWithPattern(date, undefined, 'DD/MM/YYYY HH:mm');
     expect(result).toMatch(/^\d{2}\/\d{2}\/\d{4} \d{2}:\d{2}$/);
   });
 
   test('valid date with custom timezone', () => {
     const date = new Date('2023-01-15T10:30:45Z'); // UTC time
-    const result = formatDatetimeWithPattern(date, 'YYYY-MM-DD HH:mm:ss', 'UTC');
+    const result = formatDatetimeWithPattern(date, 'UTC', 'YYYY-MM-DD HH:mm:ss');
     expect(result).toBe('2023-01-15 10:30:45');
   });
 });

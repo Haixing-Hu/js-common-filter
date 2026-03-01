@@ -6,7 +6,7 @@
 //    All rights reserved.
 //
 ////////////////////////////////////////////////////////////////////////////////
-import { NumberRule } from '@qubit-ltd/common-validation-rule';
+import { NumberRule } from '@qubit-ltd/validation-rule';
 import round from './impl/round';
 
 const MONEY_PREFIX = '¥ ';
