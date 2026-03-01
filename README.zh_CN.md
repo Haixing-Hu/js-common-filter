@@ -3,8 +3,8 @@
 [![npm包](https://img.shields.io/npm/v/@qubit-ltd/common-filter.svg)](https://npmjs.com/package/@qubit-ltd/common-filter)
 [![许可证](https://img.shields.io/badge/License-Apache-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![English Document](https://img.shields.io/badge/Document-English-blue.svg)](README.md)
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Haixing-Hu/js-common-filter/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/Haixing-Hu/js-common-filter/tree/master)
-[![测试覆盖率](https://coveralls.io/repos/github/Haixing-Hu/js-common-filter/badge.svg?branch=master)](https://coveralls.io/github/Haixing-Hu/js-common-filter?branch=master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/qubit-ltd/js-common-filter/tree/master.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/qubit-ltd/js-common-filter/tree/master)
+[![测试覆盖率](https://coveralls.io/repos/github/qubit-ltd/js-common-filter/badge.svg?branch=master)](https://coveralls.io/github/qubit-ltd/js-common-filter?branch=master)
 
 [@qubit-ltd/common-filter] 是一个JavaScript ES6库，提供各种常用的过滤和格式化功能，用于处理日期、时间、时长、货币值等多种数据类型。
 
@@ -106,4 +106,4 @@ console.log(formatChineseDuration(3661)); // 例如: "1小时1分1秒"
 详情请参阅[LICENSE](LICENSE)文件。
 
 [@qubit-ltd/common-filter]: https://npmjs.com/package/@qubit-ltd/common-filter
-[GitHub仓库]: https://github.com/Haixing-Hu/js-common-filter 
+[GitHub仓库]: https://github.com/qubit-ltd/js-common-filter 

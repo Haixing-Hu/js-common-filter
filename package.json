@@ -6,12 +6,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Haixing-Hu/js-common-filter.git"
+    "url": "git+https://github.com/qubit-ltd/js-common-filter.git"
   },
   "bugs": {
-    "url": "https://github.com/Haixing-Hu/js-common-filter/issues"
+    "url": "https://github.com/qubit-ltd/js-common-filter/issues"
   },
-  "homepage": "https://github.com/Haixing-Hu/js-common-filter",
+  "homepage": "https://github.com/qubit-ltd/js-common-filter",
   "keywords": [
     "JavaScript",
     "filter"
